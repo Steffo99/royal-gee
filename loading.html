@@ -43,7 +43,7 @@
             word-wrap: break-word;
         }
         
-        .text {
+        .title {
             grid-column: 2;
             grid-row: 2;
             align-self: center;
@@ -64,8 +64,10 @@
     </style>
     <script>
         function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language) {
-            const body = document.querySelector(".bottomtext");
-            body.innerHTML = `${gamemode} - ${mapname}`
+            const title = document.querySelector(".title");
+            title.innerHTML = `${servername}`
+            const bt = document.querySelector(".bottomtext");
+            bt.innerHTML = `${gamemode} - ${mapname}`
         }
     </script>
 </head>
@@ -76,8 +78,8 @@
         <div class="toptext">
             Ti stai unendo a
         </div>
-        <div class="text">
-            Royal Gee
+        <div class="title">
+
         </div>
         <div class="bottomtext">
 
